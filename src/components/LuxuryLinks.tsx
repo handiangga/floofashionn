@@ -1,31 +1,31 @@
 "use client";
-
-import { Globe, MessageCircle, ShoppingBag, Smartphone } from "lucide-react";
+import Image from "next/image";
+import { Globe } from "lucide-react";
 
 const links = [
   {
     title: "Website Collection",
     subtitle: "Explore Our Catalog",
-    icon: Globe,
+    icon: <Globe className="h-6 w-6" />,
     href: "#",
   },
   {
     title: "WhatsApp Admin",
     subtitle: "Fast Response Everyday",
-    icon: MessageCircle,
-    href: "#",
+    image: "/logo/wa.png", // masukkan logo WA di folder public/logo
+    href: "https://wa.me/6281393354305",
   },
   {
     title: "Shopee Floo_Fashionn",
     subtitle: "Shop With Promo",
-    icon: ShoppingBag,
-    href: "#",
+    image: "/logo/shopee.png", // masukkan logo Shopee di folder public/logo
+    href: "https://shopee.co.id/floo_fashionn",
   },
   {
     title: "TikTok Floo_Fashionn",
     subtitle: "Trending Collection",
-    icon: Smartphone,
-    href: "#",
+    image: "/logo/tiktok.png", // masukkan logo TikTok di folder public/logo
+    href: "https://www.tiktok.com/@floo_fashionn",
   },
 ];
 
@@ -41,11 +41,11 @@ export default function LuxuryLinks() {
       <div className="relative z-10 mx-auto max-w-md">
         {/* Logo */}
         <div className="mb-12 text-center">
-          <p className="mb-3 text-[12px] tracking-[0.4em] text-[#a67c52] uppercase">
-            Floo_Fashionn
+          <p className="mb-3 text-[12px] uppercase tracking-[0.4em] text-[#a67c52]">
+            FLOO_FASHIONN
           </p>
 
-          <h1 className="text-5xl text-[#2b2b2b]">
+          <h1 className="text-5xl font-light leading-tight text-[#2b2b2b]">
             Luxury
             <br />
             Modest Wear
@@ -59,17 +59,27 @@ export default function LuxuryLinks() {
         {/* Links */}
         <div className="space-y-4">
           {links.map((item, index) => {
-            const Icon = item.icon;
-
             return (
               <a
                 key={index}
                 href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center justify-between rounded-[26px] bg-[#a67c52] px-5 py-4 text-white shadow-[0_10px_30px_rgba(0,0,0,0.08)] transition duration-300 hover:scale-[1.015] hover:bg-[#9a734c]"
               >
                 <div className="flex items-center gap-4">
                   <div className="flex h-14 w-14 items-center justify-center rounded-full bg-white text-[#a67c52]">
-                    <Icon className="h-6 w-6" />
+                    {item.image ? (
+                      <Image
+                        src={item.image}
+                        alt={item.title}
+                        width={28}
+                        height={28}
+                        className="object-contain"
+                      />
+                    ) : (
+                      item.icon
+                    )}
                   </div>
 
                   <div>
