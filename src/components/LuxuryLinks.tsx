@@ -89,7 +89,7 @@ export default function LuxuryLinks() {
             rounded-[28px]
             bg-[#a67c52]
             px-5
-            py-4
+            py-5
             text-white
             shadow-[0_12px_30px_rgba(166,124,82,0.20)]
             transition-all
@@ -98,7 +98,7 @@ export default function LuxuryLinks() {
           "
         >
           <div className="flex items-center gap-4">
-            <div className="flex h-14 w-14 items-center justify-center rounded-full bg-white">
+            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-md">
               <Globe className="h-6 w-6 text-[#a67c52]" />
             </div>
 
@@ -130,7 +130,7 @@ export default function LuxuryLinks() {
                 rounded-[28px]
                 bg-[#a67c52]
                 px-5
-                py-4
+                py-5
                 text-white
                 shadow-[0_12px_30px_rgba(166,124,82,0.20)]
                 transition-all
@@ -150,9 +150,13 @@ export default function LuxuryLinks() {
                 </div>
 
                 <div>
-                  <h3 className="text-sm font-semibold">{item.title}</h3>
+                  <h3 className="text-[17px] font-bold leading-tight tracking-[0.01em]">
+                    {item.title}
+                  </h3>
 
-                  <p className="text-[11px] text-white/75">{item.subtitle}</p>
+                  <p className="mt-1 text-[12px] text-white/80">
+                    {item.subtitle}
+                  </p>
                 </div>
               </div>
 
