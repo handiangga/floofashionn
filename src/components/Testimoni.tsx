@@ -9,12 +9,12 @@ import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 
 const testimonials = [
-  "/images/look1.png",
-  "/images/look2.png",
-  "/images/look3.png",
-  "/images/look4.png",
-  "/images/look5.png",
-  "/images/look6.png",
+  "/testimoni/testi1.png",
+  "/testimoni/testi2.png",
+  "/testimoni/testi3.png",
+  "/testimoni/testi4.png",
+  "/testimoni/testi5.png",
+  "/testimoni/testi6.png",
 ];
 
 export default function Testimoni() {

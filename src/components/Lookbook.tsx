@@ -65,7 +65,7 @@ export default function Lookbook() {
         {/* CTA */}
         <div className="mt-8">
           <a
-            href="#"
+            href="https://www.instagram.com/floo_fashionn/"
             className="
               flex
               h-14
