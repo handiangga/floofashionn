@@ -43,7 +43,7 @@ export default function LuxuryLinks() {
             width={220}
             height={110}
             priority
-            className="mx-auto mb-2 object-contain"
+            className="mx-auto mb-2 h-auto object-contain"
           />
 
           <h1 className="font-luxury text-5xl leading-[0.9] text-[#2b2b2b]">
