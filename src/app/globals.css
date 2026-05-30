@@ -9,15 +9,83 @@
   --dark-brown: #6b4f3a;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-poppins);
+  overflow-x: hidden;
 }
 
+/* Luxury Heading */
 h1,
 h2,
 h3,
 h4 {
   font-family: var(--font-cormorant);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+/* Custom Selection */
+::selection {
+  background: #a67c52;
+  color: white;
+}
+
+/* Luxury Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f1ec;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c8a27a;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a67c52;
+}
+
+/* Swiper Pagination */
+.swiper-pagination {
+  margin-top: 30px;
+  position: relative !important;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #d3b089;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  width: 28px;
+  border-radius: 999px;
+  background: #a67c52;
+  opacity: 1;
+}
+
+/* Reusable Luxury Class */
+.font-luxury {
+  font-family: var(--font-cormorant);
+}
+
+.bg-luxury {
+  background: linear-gradient(135deg, #f5f1ec 0%, #efe6dd 100%);
+}
+
+.shadow-luxury {
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.06),
+    0 20px 60px rgba(166, 124, 82, 0.12);
 }
