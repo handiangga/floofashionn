@@ -12,6 +12,12 @@ const links = [
     href: "https://wa.me/6281393354305",
   },
   {
+    title: "Grup Ready Stock",
+    subtitle: "Ready Stock Update Everyday",
+    image: "/logo/wa.png",
+    href: "https://chat.whatsapp.com/EsFk45odQr6I1vnjEjx9l0?mode=gi_t",
+  },
+  {
     title: "Shopee Floo_Fashionn",
     subtitle: "Shop With Promo",
     image: "/logo/shopee.png",
