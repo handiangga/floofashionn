@@ -66,23 +66,31 @@ export default function Lookbook() {
         <div className="mt-8">
           <a
             href="https://www.instagram.com/floo_fashionn/"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => {
+              window.fbq?.("track", "Lead", {
+                content_name: "Instagram Collection",
+                content_category: "Lookbook",
+              });
+            }}
             className="
-              flex
-              h-14
-              w-full
-              items-center
-              justify-center
-              rounded-full
-              bg-[#2b2b2b]
-              text-sm
-              font-medium
-              text-white
-              shadow-[0_15px_30px_rgba(0,0,0,0.15)]
-              transition-all
-              duration-300
-              hover:-translate-y-1
-              hover:opacity-95
-            "
+    flex
+    h-14
+    w-full
+    items-center
+    justify-center
+    rounded-full
+    bg-[#2b2b2b]
+    text-sm
+    font-medium
+    text-white
+    shadow-[0_15px_30px_rgba(0,0,0,0.15)]
+    transition-all
+    duration-300
+    hover:-translate-y-1
+    hover:opacity-95
+  "
           >
             View Full Collection
           </a>

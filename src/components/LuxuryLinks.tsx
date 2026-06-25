@@ -31,6 +31,15 @@ const links = [
   },
 ];
 
+const trackLead = (button: string) => {
+  if (typeof window !== "undefined" && window.fbq) {
+    window.fbq("track", "Lead", {
+      content_name: button,
+      content_category: "Landing Page",
+    });
+  }
+};
+
 export default function LuxuryLinks() {
   return (
     <section className="relative overflow-hidden bg-[#f5f1ec] px-5 pt-6 pb-4">
@@ -86,6 +95,7 @@ export default function LuxuryLinks() {
         {/* Website Button */}
         <Link
           href="/coming-soon"
+          onClick={() => trackLead("Website Collection")}
           className="
             group
             mb-3
@@ -128,6 +138,7 @@ export default function LuxuryLinks() {
               href={item.href}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackLead(item.title)}
               className="
                 group
                 flex

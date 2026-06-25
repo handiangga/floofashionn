@@ -1,8 +1,22 @@
+"use client";
+
+import { useEffect } from "react";
+
 import LuxuryLinks from "@/components/LuxuryLinks";
 import Lookbook from "@/components/Lookbook";
 import Testimoni from "@/components/Testimoni";
 
 export default function Home() {
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.fbq) {
+      window.fbq("track", "ViewContent", {
+        content_name: "Landing Page Floo Fashionn",
+        content_category: "Kebaya",
+        content_type: "product",
+      });
+    }
+  }, []);
+
   return (
     <main className="relative min-h-screen bg-[#ebe4dc]">
       {/* Background Blur Luxury */}
