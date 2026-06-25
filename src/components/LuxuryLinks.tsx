@@ -21,7 +21,7 @@ const links = [
     title: "Shopee Floo_Fashionn",
     subtitle: "Shop With Promo",
     image: "/logo/shopee.png",
-    href: "https://shopee.co.id/floo_fashionn",
+    href: "https://s.shopee.co.id/8UsL2sstA9",
   },
   {
     title: "TikTok Floo_Fashionn",
